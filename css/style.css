@@ -1,0 +1,228 @@
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+html,body { 
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fuentes/raleway-regular-webfont.eot');
+    src: url('../fuentes/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fuentes/raleway-regular-webfont.woff2') format('woff2'), url('../fuentes/raleway-regular-webfont.woff') format('woff'), url('../fuentes/raleway-regular-webfont.ttf') format('truetype'), url('../fuentes/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayl';
+    src: url('../fuentes/raleway-extralight-webfont.eot');
+    src: url('../fuentes/raleway-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fuentes/raleway-extralight-webfont.woff2') format('woff2'),
+        url('../fuentes/raleway-extralight-webfont.woff') format('woff'),
+        url('../fuentes/raleway-extralight-webfont.ttf') format('truetype'),
+        url('../fuentes/raleway-extralight-webfont.svg#ralewayextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewayE';
+    src: url('../fuentes/raleway-thin-webfont.eot');
+    src: url('../fuentes/raleway-thin-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fuentes/raleway-thin-webfont.woff2') format('woff2'),
+        url('../fuentes/raleway-thin-webfont.woff') format('woff'),
+        url('../fuentes/raleway-thin-webfont.ttf') format('truetype'),
+        url('../fuentes/raleway-thin-webfont.svg#ralewaythin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#container{width:100%; 
+           font-family:ralewayregular;
+           display:fex;
+           flex-direction:column;
+           justify-content:space-around;
+           align-item:center;
+           background-color:black;
+           color:white;}
+header{width: 100%;
+       height: 100px;
+       font-family:ralewayregular;
+       background-color: black;
+       display: flex;
+       flex-direction: row;
+       flex-wrap:wrap;    
+       justify-content: space-between;
+       align-items: center;
+}
+#btSearch{width:20%;
+          background-color: #f51d06;
+          color:white;
+          height: 50px;
+          font-family:ralewayregular;
+          min-width: 120px;
+          transition-property: font-size;
+          transition-duration: 1s;
+          transition-delay: 0s;
+          transition-timing-function: ease;
+          font-size: 1em;
+}
+#btSearch:hover{
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+    font-size: 1.3em;
+    color:white;
+}
+#buscador{
+    width:60%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    align-item:flex-end;
+    align-content:flex-end;
+    justify-content:flex-end;
+    font-family:ralewayregular;
+    min-width:220px;
+    margin-right: 10%;}
+#logo{width:20%;
+      min-width:200px;}
+.imgL{width:50%;}
+#title{width:60%;height: 50px; min-width: 100px;
+       font-family:ralewayregular; padding-left:2%}
+#volver,#volverSerie,#volverTemporada{text-align: left;
+                                      margin-left: 20%;}
+.icon{width:5%;}
+.img{width:100%;}
+.img2{width:40%;}
+.img3{width:35%;}
+#serie{width:100%; 
+       font-family:ralewayregular;
+       display:flex;
+       flex-direction:column;
+       justify-content:space-around;
+       align-items:center;
+       background-color: black;}
+#containerSerie,#containerEpisode{
+    font-family:ralewayregular;
+    width:100%;           
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+}
+
+#serieI,#imagenCapitulo{width:40%; min-width: 320px;font-family:ralewayregular;text-align: center;
+                        display: flex; align-items:center;align-content:center;justify-content:center; }
+
+#serieD,#episodioConcreto{width:45%;min-width: 320px;font-family:ralewayregular;
+                          line-height: 20pt; text-align: justify;
+}
+
+#temporadas{width:94%;
+            color:white;
+            padding-top: 120px;
+            display: flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+            font-family:ralewayregular;
+            align-content:space-around;
+            line-height: 30pt;
+            align-items:center;
+            min-width:320px;
+            margin-bottom:30px; 
+}
+a, li{
+    text-decoration: none;
+    list-style: none;
+    font-family: raleway;
+    color: white;
+    font-weight: 700;
+}
+
+#temporadas a{width:20%;
+              min-width: 120px;
+              font-family:ralewayregular;
+              text-align:center;}
+#temporadas a:hover{border-bottom: 2px solid #f51d06;}
+#episodios li:hover{border-bottom: 2px solid #f51d06;
+                    cursor:pointer;}
+#titulo,#tituloE{font-family: ralewayl;
+                 font-size:3em;
+                 line-height: 40pt;
+                 text-align:left;
+}
+
+#noEncontrado,#noEpisodio, #noDisponible{text-align: center;min-width:320px;}
+#divTitulo,#divTituloE{ margin-bottom: 20px;
+                        width:70%;
+                        min-width:320px;}
+#divImdb,#divImdb2{width:10%;
+                   background-color: #f51d06;
+                   text-align: center;
+                   font-size:1.5em;
+                   color:white;         
+                   min-width: 34px;
+                   padding-bottom: 3%;}
+#serieD div{padding-top: 20px;}
+#episodioConcreto div{padding-top: 20px;}
+#tituloVotacion,#tituloVotacion2{display:flex;
+                                 flex-direction:row;
+                                 flex-wrap:wrap;
+                                 align-items:baseline;
+                                 justify-content:space-between;
+                                 align-content:flex-start;
+}
+#episodios{width:45%;min-width: 320px;font-family:ralewayregular;
+           line-height: 20pt; text-align: justify;}
+#episodios li{ display:inline-block;
+               line-height: 30pt;width:20%;
+               min-width: 120px;
+               text-align: center;}
+#containerEpisode{
+    font-family:ralewayregular;
+    width:100%;           
+    display:flex;
+    flex-wrap:wrap-reverse;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.visible{display: block;}
+.desaparecido{visibility:hidden;}
+.large{height:2000px;}
+.oculto{display: none  !important;}
+.flexible{display:flex;}
+
+@media screen and (min-width:1600px){
+    #container{height:1080px;}
+    #temporadas{padding-top:250px;}
+    #containerSerie{margin-top:170px;}
+}
+@media screen and (max-width:500px){
+    #temporadas{align-items: center;
+                align-content: center;
+                justify-content: center;
+                padding-top:20px;
+                margin-top:20px;
+                border-top:1px dashed white;}
+    header{align-items: center;
+           align-content: center;
+           justify-content: center;
+            margin-bottom: 20px;}
+    #logo{margin-left: 18%;}
+    #buscador{margin-right: 0px;
+    }
+    #episodios{
+        margin-left:25%;
+        margin-top: 40px;}
+}

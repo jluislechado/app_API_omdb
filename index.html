@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Series</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div id="logo"><img class="imgL" src="img/jl.png"/></div>
+                <section id="buscador">
+                    <input  type="text" id="title"/>
+                    <input type="button" value="Search" id="btSearch"/>
+                </section>  
+            </header>
+            <div id="principal" class="visible"><img class="img" src="img/cine2.jpg"/></div>
+            <div id="principal2" class="oculto"></div>
+            <section id="serie" class="oculto">
+                <div id="containerSerie">
+                    <div id="serieI">
+                        <img id="imagen" src="" alt=""/>
+
+                    </div>
+
+                    <div id="serieD" class="oculto">
+                        <div id="tituloVotacion">
+                            <div id="divTitulo"><span id="titulo"></span></div>
+                            <div id="divImdb"><span id="nota"></span></div>
+                        </div>
+                        <div>Genre: <span id="genero"></span></div>
+                        <div>Actors: <span id="actores"></span></div>
+                        <div>Plot: <span id="sinopsis"></span></div>
+
+                    </div>
+                    <div id="episodios" class="oculto">
+
+                    </div>
+
+                </div>
+                <div id="containerEpisode">
+
+                    <div id="episodioConcreto" class="oculto">
+                        <div id="tituloVotacion2">
+                            <div id="divTituloE"><span id="tituloE"></span></div>
+                            <div id="divImdb2"><span id="notaE"></span></div>
+                        </div>
+                        <div>Season: <span id="seasonE"></span></div>
+                        <div>Episode: <span id="episodeE"></span></div>                    
+                        <div>Runtime: <span id="runtime"></span></div>
+                        <div>Plot: <span id="sinopsisE"></span></div>
+
+                    </div>
+                    <div id="imagenCapitulo">
+                        <img id="imagenC" src=""/>
+
+                    </div>
+                </div>
+                <div id="temporadas" class="desaparecido">
+
+                </div>
+            </section>
+            <section id="noEncontrado" class="oculto">
+                <img class="img2" src="img/notfounds.png"/>
+                <div id="volver"><img class="icon" src="img/back.png"/></div>
+            </section>
+            <section id="noDisponible" class="oculto">
+                <img class="img2" src="img/notfound.png"/>
+                <div id="volverSerie"><img class="icon" src="img/back.png"/></div>
+            </section>
+            <section id="noEpisodio" class="oculto">
+                <img class="img3" src="img/dohE.png"/>
+                <div id="volverTemporada"><img class="icon" src="img/back.png"/></div>
+            </section>
+        </div>
+        <script src="js/ajax.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
